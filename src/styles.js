@@ -19,7 +19,7 @@ function slides() {
   slider.style.transition = "transform 1s";
   contador++;
 
-  if (contador == sliderIndividual.length) {
+  if (contador == (sliderIndividual.length - 2)) {
     setTimeout(function () {
       slider.style.transform = "translate(0px)";
       slider.style.transition = "transform .8s";
@@ -27,6 +27,8 @@ function slides() {
     }, 1500);
   }
 }
+
+
 
 
 /*INDICADOR SECCION SCROLL*/
