@@ -1283,6 +1283,30 @@ video {
 }
 
 
+@media (max-width: 20em) {
+
+  .portafolio {
+    padding: 20px;
+    height: unset;
+  }
+
+  .portafolio::before {
+    height: 100%;
+  }
+
+  .portafolio__title {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+
+  .portafolio__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4 ,20vh);
+    height: unset;
+  }
+  
+}
+
 
 /*Testimonios*/
 
@@ -1376,6 +1400,34 @@ video {
   font-size: 14px;
   color: var(--text-color);
 }
+
+
+@media (max-width: 20em) {
+  .testimonios {
+    height: unset;
+    left: -30px;
+    width: 100vw;
+    margin-left: unset;
+    padding: 0 40px;
+  }
+
+  .testimonio__container {
+    grid-template-columns: repeat(6, 60%);
+  }
+
+  .testimonio__nombre {
+    font-size: .9rem;
+  }
+
+  .testimonio__declaracion {
+    font-size: 12px;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 
 /*Footer*/
 
