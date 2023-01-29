@@ -59,6 +59,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
   width: 100vw;
   overflow-x: hidden;
   line-height: inherit;
@@ -277,6 +278,7 @@ video {
   z-index: 100;
   position: fixed;
   left: 0;
+  top: 0;
   margin: 0;
 
   padding: 10px;
@@ -416,22 +418,17 @@ video {
   display: none;
 }
 
-
-@media (max-width: 23em) {
-
-}
-
-@media (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 26em) {
   .navbar {
     display: none;
   }
-
 }
 
 
 /*Landing*/
 
 .landing {
+  top: -25px;
   position: relative;
   display: flex;
   width: 100vw;
@@ -588,7 +585,7 @@ video {
 }
 
 
-@media (max-width: 23em) {
+@media only screen and (min-width: 0) and (max-width: 23em) {
 
   h1 {
     font-size: 2.5rem;
@@ -664,7 +661,7 @@ video {
 
 }
 
-@media (max-width: 26em) {
+@media only screen and (min-width: 23em) and (max-width: 26em) {
 
   h1 {
     font-size: 2.5rem;
@@ -733,8 +730,8 @@ video {
   }
 
   .circlebg {
-    width: 120vw;
-    height: 120vw;
+    width: 130vw;
+    height: 130vw;
     top: -80px;
     left: -90px;
   }
@@ -756,6 +753,7 @@ video {
   width: 100vw;
   height: 100vh;
   padding-left: var(--navbar-width);
+  overflow-x: hidden;
 }
 
 .nosotros__squarebg {
@@ -918,86 +916,11 @@ video {
 }
 
 
-@media (max-width: 23em) {
+@media only screen and (min-width: 0) and (max-width: 26em) {
 
   .nosotros {
     flex-direction: column;
-    padding: 40px 10px;
-    height: unset;
-  }
-
-  .nosotros__squarebg {
-    width: 110vw;
-    height: 70vh;
-    left: -40px;
-  }
-
-  .nosotros__descripcion {
-    width: 100%;
-    margin: 0 0 60px 0;
-  }
-
-  .nosotros__info {
-    padding: 0;
-  }
-
-  .nosotros__desc {
-    font-size: .9rem;
-    margin: 10px 0;
-  }
-
-  .nosotros__equipo {
-    width: 95%;
-    padding: 10px 10px;
-  }
-
-  .profile__pic {
-    width: 30px;
-    height: 30px;
-  }
-
-  .nosotros__profiledesc {
-    font-size: .6rem;
-  }
-
-  .nosotros__productos {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    width: 80%;
-    padding: 10px;
-  }
-
-  .nosotros__card {
-    color: #FFF;
-    background-color: var(--second-color);
-    transform: translateY(-10px);
-  }
-
-  .nosotros__card__title {
-    font-size: 1.5rem;
-    color: #fff;
-  }
-
-  .nosotros__card li {
-    font-size: .8rem;
-  }
-
-  .card__icon {
-    right: 50px;
-    transform: scale(5);
-    border-radius: 50%;
-    opacity: .2;
-    filter: invert();
-  }
-
-
-}
-
-@media (max-width: 26em) {
-
-  .nosotros {
-    flex-direction: column;
-    padding: 80px 10px 20px 10px;
+    padding: 50px 10px;
     height: unset;
   }
 
@@ -1009,6 +932,7 @@ video {
 
   .nosotros__descripcion {
     width: 100%;
+    height: 60vh;
     margin: 0 0 60px 0;
   }
 
@@ -1046,8 +970,6 @@ video {
     color: #FFF;
     background-color: var(--second-color);
     transform: translateY(-10px);
-    width: 80%;
-    margin: auto;
   }
 
   .nosotros__card__title {
@@ -1056,7 +978,7 @@ video {
   }
 
   .nosotros__card li {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .card__icon {
@@ -1067,9 +989,7 @@ video {
     filter: invert();
   }
 
-
 }
-
 
 /*Planes*/
 
@@ -1078,6 +998,7 @@ video {
   height: 100vh;
   width: 100vw;
   padding-left: var(--navbar-width);
+  /* overflow-x: hidden; */
 }
 
 .planes__circlebg {
@@ -1087,12 +1008,14 @@ video {
 }
 
 .circlebg--1 {
+  top: 60px;
   right: -180px;
   width: 50vw;
   height: 50vw;
   animation: ungrowth;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  z-index: -1;
 }
 
 .circlebg--2 {
@@ -1191,7 +1114,7 @@ video {
   background-color: var(--second-color);
   width: 400px;
   height: 260px;
-  border-radius: 50%;
+  border-radius: 0 0 50% 50%;
   transition: all .2s linear;
 }
 
@@ -1201,7 +1124,7 @@ video {
   top: -50px;
   width: 400px;
   height: 260px;
-  border-radius: 50%;
+  border-radius: 0 0 50% 50%;
   transition: all .5s ease-out;
 }
 
@@ -1277,7 +1200,7 @@ video {
 }
 
 
-@media (max-width: 23em) {
+@media only screen and (min-width: 0) and (max-width: 26em) {
   .planes {
     height: unset;
     padding: 10px;
@@ -1311,66 +1234,27 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
     margin-bottom: 10px;
-  }
-
-}
-
-@media (max-width: 26em) {
-  .planes {
-    height: unset;
-    padding: 10px;
-  }
-
-  .titlebg {
-    background-color: var(--second-color);
-    padding: 10px;
-  }
-
-  .planes__title {
-    font-size: 1.7rem;
-    letter-spacing: 0;
-    margin: auto;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-  }
-
-  .planes__container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .planes__card__header {
-    margin-bottom: 70px;
-  }
-
-  .planes__card__title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin-bottom: 10px;
-  }
-
-  .planes__card {
-    width: 80%;
-    margin: auto;
   }
 
   .circlebg--1 {
-    z-index: -1;
-    width: 80vw;
-    height: 80vw;
-    left: -50px;
+    right: -60px;
+    width: 50vw;
+    height: 50vw;
+    animation: ungrowth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
   }
 
-  .circlebg--2 {
-    z-index: -10;
-    left: -50px;
-    bottom: -100px;
-    width: 120vw;
-    height: 120vw;
+}
+
+@media only screen and (min-width: 23em) and (max-width: 26em) {
+  .planes__container {
+    grid-template-columns: repeat(1, 70vw);
+    padding: 20px;
+    justify-content: center;
   }
 }
+
 
 /*Portafolio*/
 
@@ -1502,7 +1386,7 @@ video {
 }
 
 
-@media (max-width: 23em) {
+@media only screen and (min-width: 0) and (max-width: 26em) {
 
   .portafolio {
     padding: 20px;
@@ -1520,35 +1404,10 @@ video {
 
   .portafolio__grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4 ,20vh);
-    height: unset;
-  }
-  
-}
-
-
-@media (max-width: 26em) {
-
-  .portafolio {
-    padding: 20px;
+    grid-template-rows: repeat(4, 20vh);
     height: unset;
   }
 
-  .portafolio::before {
-    height: 100%;
-  }
-
-  .portafolio__title {
-    font-size: 2rem;
-    letter-spacing: 0;
-  }
-
-  .portafolio__grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4 ,20vh);
-    height: unset;
-  }
-  
 }
 
 
@@ -1646,7 +1505,7 @@ video {
 }
 
 
-@media (max-width: 23em) {
+@media only screen and (min-width: 0) and (max-width: 26em) {
   .testimonios {
     height: unset;
     left: -30px;
@@ -1656,7 +1515,7 @@ video {
   }
 
   .testimonio__container {
-    grid-template-columns: repeat(6, 60%);
+    grid-template-columns: repeat(6, 78vw);
   }
 
   .testimonio__nombre {
@@ -1666,33 +1525,7 @@ video {
   .testimonio__declaracion {
     font-size: 12px;
   }
-  main {
-    padding: 0;
-    margin: 0;
-  }
-}
 
-
-@media (max-width: 26em) {
-  .testimonios {
-    height: unset;
-    left: -30px;
-    width: 100vw;
-    margin-left: unset;
-    padding: 0 40px;
-  }
-
-  .testimonio__container {
-    grid-template-columns: repeat(6, 60%);
-  }
-
-  .testimonio__nombre {
-    font-size: .9rem;
-  }
-
-  .testimonio__declaracion {
-    font-size: 12px;
-  }
   main {
     padding: 0;
     margin: 0;
@@ -1751,20 +1584,21 @@ footer {
   background-color: var(--second-color);
 }
 
-@media (max-width: 23em) {
+
+@media only screen and (min-width: 0) and (max-width: 26em) {
   footer {
     height: unset;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
   }
 
   .footer__logo {
-    padding: 0;
+    padding: 20px 50px;
   }
 
   .footer__contacto {
-    padding: 30px 0;
+    padding: 10px 0 0 0;
     margin: auto;
   }
 
@@ -1782,52 +1616,7 @@ footer {
   }
 
   .footer__legal {
-    padding: 30px;
-    margin: auto;
-  }
-
-  .footer {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer span{
-    font-size: .8rem;
-  }
-}
-
-@media (max-width: 26em) {
-  footer {
-    height: unset;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .footer__logo {
     padding: 0;
-  }
-
-  .footer__contacto {
-    padding: 30px 0;
-    margin: auto;
-  }
-
-  .footer__logo img {
-    object-fit: contain;
-    gap: 0;
-  }
-
-  .footer__logo img:nth-child(1) {
-    width: 40%;
-  }
-
-  .footer__logo img:nth-child(2) {
-    width: 70%;
-  }
-
-  .footer__legal {
-    padding: 30px;
     margin: auto;
   }
 
@@ -1836,7 +1625,7 @@ footer {
     gap: 10px;
   }
 
-  .footer span{
+  .footer span {
     font-size: .8rem;
   }
 }
