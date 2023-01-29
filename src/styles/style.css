@@ -418,7 +418,7 @@ video {
   display: none;
 }
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
   .navbar {
     display: none;
   }
@@ -661,7 +661,7 @@ video {
 
 }
 
-@media only screen and (min-width: 23em) and (max-width: 26em) {
+@media only screen and (min-width: 23em) and (max-width: 30em) {
 
   h1 {
     font-size: 2.5rem;
@@ -699,12 +699,12 @@ video {
   .landing__info {
     width: 100vw;
     height: 90vh;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     justify-content: flex-start;
   }
 
   .landing__description {
-    margin: 20px 0 20px 0;
+    margin: 80px 0 20px 0;
   }
 
   .landing__image {
@@ -742,7 +742,14 @@ video {
 
 }
 
-
+@media only screen and (min-width: 26em) and (max-width: 30em) {
+  .circlebg {
+    width: 118vw;
+    height: 118vw;
+    top: -80px;
+    left: -90px;
+  }
+}
 
 /*Nosotros*/
 
@@ -916,7 +923,7 @@ video {
 }
 
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
 
   .nosotros {
     flex-direction: column;
@@ -926,7 +933,7 @@ video {
 
   .nosotros__squarebg {
     width: 110vw;
-    height: 60vh;
+    height: 50vh;
     left: -40px;
   }
 
@@ -989,6 +996,12 @@ video {
     filter: invert();
   }
 
+}
+
+@media only screen and (min-width: 0) and (max-width: 30em) {
+  .nosotros__descripcion {
+    margin: 0;
+  }
 }
 
 /*Planes*/
@@ -1200,7 +1213,7 @@ video {
 }
 
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
   .planes {
     height: unset;
     padding: 10px;
@@ -1247,11 +1260,17 @@ video {
 
 }
 
-@media only screen and (min-width: 23em) and (max-width: 26em) {
+@media only screen and (min-width: 23em) and (max-width: 30em) {
   .planes__container {
     grid-template-columns: repeat(1, 70vw);
     padding: 20px;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 26em) and (max-width: 30em) {
+  .planes__container {
+    grid-template-columns: repeat(1, 60vw);
   }
 }
 
@@ -1386,7 +1405,7 @@ video {
 }
 
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
 
   .portafolio {
     padding: 20px;
@@ -1505,7 +1524,7 @@ video {
 }
 
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
   .testimonios {
     height: unset;
     left: -30px;
@@ -1529,6 +1548,12 @@ video {
   main {
     padding: 0;
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 26em) and (max-width: 30em) {
+  .testimonio__container {
+    grid-template-columns: repeat(6, 85vw);
   }
 }
 
@@ -1585,7 +1610,7 @@ footer {
 }
 
 
-@media only screen and (min-width: 0) and (max-width: 26em) {
+@media only screen and (min-width: 0) and (max-width: 30em) {
   footer {
     height: unset;
     display: flex;
