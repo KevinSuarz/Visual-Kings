@@ -418,7 +418,7 @@ video {
   display: none;
 }
 
-@media only screen and (min-width: 0) and (max-width: 30em) {
+@media only screen and (min-width: 0) and (max-width: 36em) {
   .navbar {
     display: none;
   }
@@ -434,6 +434,7 @@ video {
   width: 100vw;
   height: 100vh;
   padding: 0 var(--navbar-width);
+  border: 2px solid red;
 }
 
 .landing__info {
@@ -708,16 +709,14 @@ video {
   }
 
   .landing__image {
-    background-color: #000;
     width: 20vw;
-    height: 13vh;
-    align-items: flex-start;
+    height: 20vh;
   }
 
   .landing__links {
     flex-direction: column;
     width: 100%;
-    margin-top: 140px;
+    margin-top: 120px;
   }
 
   .landing__link {
@@ -750,6 +749,29 @@ video {
     left: -90px;
   }
 }
+
+@media only screen and (min-width: 30em) and (max-width: 36em) {
+  .landing {
+    padding: 20px;
+  }
+  
+  .landing__info {
+    padding: 0;
+    
+  }
+
+  .circlebg {
+    right: -80px;
+    width: 60vw;
+    height: 60vw;
+    background-color: var(--third-color);
+  }
+
+  .landing__image {
+    align-items: flex-start;
+  }
+}
+
 
 /*Nosotros*/
 
