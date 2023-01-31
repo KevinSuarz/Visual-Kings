@@ -755,6 +755,42 @@ video {
   }
 }
 
+@media only screen and (min-width: 62em) and (max-width: 75em) {
+  .landing__image {
+    width: 30%;
+    margin-left: 100px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
+  .circlebg {
+    width: 50vw;
+    height: 50vw;
+    right: -120px;
+    top: -120px;
+  }
+
+  .alert {
+    top: 60px;
+  }
+}
+
+@media only screen and (min-width: 75em) and (max-width: 87.5em) {
+  .landing__image {
+    width: 50%;
+    margin-left: 100px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
+  .circlebg {
+    width: 50vw;
+    height: 50vw;
+    right: -120px;
+    top: -120px;
+  }
+}
+
 /*Nosotros*/
 
 .nosotros {
@@ -1057,6 +1093,32 @@ video {
   .nosotros__equipo {
     margin-top: 50px;
   }
+}
+
+@media only screen and (min-width: 62em) and (max-width: 87.5em) {
+ 
+  .nosotros__squarebg {
+    z-index: -1;
+    width: 60vw;
+    height: 85vh;
+    top: 50px;
+  }
+ 
+  .nosotros__descripcion {
+    width: 45%;
+  }
+
+  .nosotros__info {
+    width: 100%;
+  }
+
+  .nosotros__productos {
+    gap: 10px;
+  }
+  .nosotros__card__title {
+    font-size: 1.5rem;
+  }
+  
 }
 
 
@@ -1363,6 +1425,28 @@ video {
   }
 }
 
+@media only screen and (min-width: 62em) and (max-width: 75em) {
+  .planes {
+    height: unset;
+  }
+  .planes__container {
+    grid-template-columns: repeat(2, 30vw);
+    height: 170vh;
+    justify-content: center;
+    gap: 30px;
+  }
+
+}
+
+@media only screen and (min-width: 75em) and (max-width: 82em) {
+  .planes__container {
+    padding: 0 20px;
+    grid-template-columns: repeat(4, 21VW);
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+  }
+}
 
 /*Portafolio*/
 
@@ -1518,7 +1602,7 @@ video {
 
 }
 
-@media only screen and (min-width: 48em) and (max-width: 62em) {
+@media only screen and (min-width: 48em) and (max-width: 75em) {
   .portafolio {
     height: 80vh;
   }
@@ -1663,6 +1747,18 @@ video {
 @media only screen and (min-width: 36em) and (max-width: 48em) {
   .testimonio__container {
     grid-template-columns: repeat(6, 40vw);
+  }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+  .testimonio__container {
+    grid-template-columns: repeat(6, 40vw);
+  }
+}
+
+@media only screen and (min-width: 62em) and (max-width: 75em) {
+  .testimonios {
+    height: 60vh;
   }
 }
 
