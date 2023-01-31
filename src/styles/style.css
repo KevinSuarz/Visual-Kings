@@ -763,6 +763,7 @@ video {
     align-items: flex-start;
     padding: 50px 0;
   }
+
   .circlebg {
     width: 50vw;
     height: 50vw;
@@ -783,6 +784,7 @@ video {
     align-items: flex-start;
     padding: 50px 0;
   }
+
   .circlebg {
     width: 50vw;
     height: 50vw;
@@ -790,6 +792,24 @@ video {
     top: -120px;
   }
 }
+
+@media only screen and (min-width: 87.5em) {
+  .landing__image {
+    width: 48%;
+    margin-left: 100px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 50px 0;
+  }
+
+  .circlebg {
+    width: 55vw;
+    height: 55vw;
+    right: -150px;
+    top: -120px;
+  }
+}
+
 
 /*Nosotros*/
 
@@ -1096,14 +1116,14 @@ video {
 }
 
 @media only screen and (min-width: 62em) and (max-width: 87.5em) {
- 
+
   .nosotros__squarebg {
     z-index: -1;
     width: 60vw;
     height: 85vh;
     top: 50px;
   }
- 
+
   .nosotros__descripcion {
     width: 45%;
   }
@@ -1115,11 +1135,26 @@ video {
   .nosotros__productos {
     gap: 10px;
   }
+
   .nosotros__card__title {
     font-size: 1.5rem;
   }
-  
+
 }
+
+@media only screen and (min-width: 87.5em) {
+  .nosotros__squarebg {
+    z-index: -1;
+    width: 50vw;
+    height: 85vh;
+    top: 50px;
+  }
+
+  .nosotros__card__title {
+    font-size: 2.2rem;
+  }
+}
+
 
 
 /*Planes*/
@@ -1420,8 +1455,8 @@ video {
   .planes__container {
     grid-template-columns: repeat(2, 30vw);
     justify-content: center;
-    gap: 100px;
-    height: 140vh;
+    gap: 50px;
+    height: 160vh;
   }
 }
 
@@ -1429,6 +1464,7 @@ video {
   .planes {
     height: unset;
   }
+
   .planes__container {
     grid-template-columns: repeat(2, 30vw);
     height: 170vh;
@@ -1444,9 +1480,51 @@ video {
     grid-template-columns: repeat(4, 21VW);
     justify-content: center;
     gap: 20px;
-    height: 80%;
+    height: 70%;
   }
 }
+
+@media only screen and (min-width: 87.5em) {
+
+  .planes__container {
+    height: 80%;
+    justify-content: center;
+    grid-template-columns: repeat(4, 18VW);
+    gap: 40px;
+  }
+
+  .planes__circlebgbf {
+    height: 320px;
+  }
+
+  .planes__circlebgbf--white {
+    height: 320px;
+
+  }
+
+  .planes__card__title {
+    font-size: 2.3rem;
+  }
+
+  .planes__txtw {
+    font-size: 1rem;
+  }
+
+  .planes__card__price>* {
+    font-size: 2rem;
+  }
+
+  .planes__alert {
+    top: 220px;
+    right: 0;
+    font-size: 1.5rem;
+  }
+
+  .planes__card__info li {
+    font-size: 1rem;
+  }
+}
+
 
 /*Portafolio*/
 
