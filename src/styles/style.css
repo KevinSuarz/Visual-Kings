@@ -1581,6 +1581,16 @@ video {
   overflow: hidden;
 }
 
+.portafolio__webtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portafolio__webtitle img{
+  width: 80%;
+}
+
 .portafolio__webimg {
   position: absolute;
   top: 0;
