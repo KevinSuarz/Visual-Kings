@@ -1413,7 +1413,7 @@ video {
 
 }
 
-@media only screen and (min-width: 23em) and (max-width: 30em) {
+@media only screen and (min-width: 23em) and (max-width: 26em) {
   .planes__container {
     grid-template-columns: repeat(1, 70vw);
     padding: 20px;
@@ -1421,28 +1421,47 @@ video {
   }
 }
 
-@media only screen and (min-width: 26em) and (max-width: 30em) {
+@media only screen and (min-width: 26em) and (max-width: 32em) {
+  .planes__container {
+    grid-template-columns: repeat(1, 70vw);
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 32em) and (max-width: 36em) {
   .planes__container {
     grid-template-columns: repeat(1, 60vw);
     justify-content: center;
   }
 }
 
+@media only screen and (min-width: 0) and (max-width: 36em) {
+  .planes__card__info li {
+    font-size: .8rem;
+    line-height: 1.5rem;
+  }
 
-@media only screen and (min-width: 30em) and (max-width: 36em) {
-  .planes__container {
-    grid-template-columns: repeat(1, 50vw);
-    justify-content: center;
+  .planes__card__info {
+    margin: 20px 0;
   }
 }
 
-@media only screen and (min-width: 36em) and (max-width: 62em) {
+@media only screen and (min-width: 36em) and (max-width: 48em) {
 
   .planes__container {
-    grid-template-columns: repeat(2, 40vw);
+    grid-template-columns: repeat(2, 45vw);
     justify-content: center;
-    gap: 100px;
-    height: 140vh;
+    gap: 20px;
+    /* height: 140vh; */
+  }
+
+  .planes__card__info li {
+    font-size: .8rem;
+    line-height: 1.5rem;
+  }
+
+  .planes__card__info {
+    margin: 20px 0;
   }
 }
 
@@ -1453,10 +1472,17 @@ video {
   }
 
   .planes__container {
-    grid-template-columns: repeat(2, 30vw);
+    grid-template-columns: repeat(2, 40vw);
     justify-content: center;
-    gap: 50px;
-    height: 160vh;
+    gap: 40px;
+  }
+
+  .planes__card__info li {
+    line-height: 2rem;
+  }
+
+  .planes__card__info {
+    margin: 0 0 20px 0;
   }
 }
 
@@ -1587,7 +1613,7 @@ video {
   align-items: center;
 }
 
-.portafolio__webtitle img{
+.portafolio__webtitle img {
   width: 80%;
 }
 
@@ -1686,6 +1712,10 @@ video {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 20vh);
     height: unset;
+  }
+
+  .portafolio__webtitle img {
+    width: 60%;
   }
 
 }
