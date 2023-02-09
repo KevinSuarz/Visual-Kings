@@ -932,8 +932,9 @@ video {
 
 .nosotros__card__title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--first-color);
+  margin-top: 5px;
 }
 
 .nosotros__card:hover .nosotros__card__title {
@@ -1173,8 +1174,20 @@ video {
   background-color: #c4e1ed;
 }
 
+.contener__bola {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .circlebg--1 {
+  position: unset;
   top: 60px;
+  margin-left: 60%;
   right: -180px;
   width: 50vw;
   height: 50vw;
